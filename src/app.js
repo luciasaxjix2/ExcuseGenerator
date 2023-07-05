@@ -5,7 +5,42 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+const arregloAleatorio = arreglo => {
+  let length = arreglo.length;
+  let indice = Math.floor(Math.random() * length);
+  let valor = arreglo[indice];
+
+  return valor;
+};
+
+let who = ["The dog", "My grandma", "His turtle", "My bird"];
+let action = ["ate", "peed", "crushed", "broke"];
+let what = ["my homework", "the keys", "the car"];
+let when = [
+  "before the class",
+  "right on time",
+  "when I finished",
+  "during my lunch",
+  "while I was praying"
+];
+
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let aleatorioWho = arregloAleatorio(who);
+  let aleatorioAction = arregloAleatorio(action);
+  let aleatorioWhat = arregloAleatorio(what);
+  let aleatorioWhen = arregloAleatorio(when);
+
+  console.log(
+    " " +
+      aleatorioWho +
+      " " +
+      aleatorioAction +
+      " " +
+      aleatorioWhat +
+      " " +
+      aleatorioWhen
+  );
+  //TENGO DUDAS CON ESTE CONSOLE.LOG
+  //console.log("Hello Rigo from the console!");
 };
