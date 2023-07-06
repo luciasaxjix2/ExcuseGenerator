@@ -31,16 +31,17 @@ window.onload = function() {
   let aleatorioWhat = arregloAleatorio(what);
   let aleatorioWhen = arregloAleatorio(when);
 
-  console.log(
+  let excusa =
     " " +
-      aleatorioWho +
-      " " +
-      aleatorioAction +
-      " " +
-      aleatorioWhat +
-      " " +
-      aleatorioWhen
-  );
-  //TENGO DUDAS CON ESTE CONSOLE.LOG
-  //console.log("Hello Rigo from the console!");
+    aleatorioWho +
+    " " +
+    aleatorioAction +
+    " " +
+    aleatorioWhat +
+    " " +
+    aleatorioWhen;
+
+  console.log(excusa);
+  let elemento = document.getElementById("excusa");
+  elemento.innerHTML = excusa;
 };
